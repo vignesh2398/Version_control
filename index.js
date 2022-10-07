@@ -2,7 +2,7 @@
 const express=require('express');
 const cors=require('cors');
 const mongoose=require('mongoose');
-var indexRouter = require('./routes/app');
+var indexRouter = require('./routes/routers');
 
 const dotenv=require('dotenv');
 //const router = require('./routes/app');
