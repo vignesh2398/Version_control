@@ -2,17 +2,17 @@
 const express=require('express');
 const cors=require('cors');
 const mongoose=require('mongoose');
-//var indexRouter = require('./routes/app');
+var indexRouter = require('./routes/app');
 
 const dotenv=require('dotenv');
-const router = require('./routes/app');
+//const router = require('./routes/app');
 dotenv.config();
 const app=express();
  app.use(express.json())
  app.use(cors())
  //router
 // app.use('/',router)
-app.use('/',router);
+app.use('/',indexRouter);
 
  //MongoDB url
  const URI=process.env.DB_URL
