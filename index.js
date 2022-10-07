@@ -17,9 +17,9 @@ app.use('/',indexRouter);
  //MongoDB url
  const URI=process.env.DB_URL
  
- 
+ console.log(process.env.PORT)
  mongoose.connect(URI).then(()=>{
-     app.listen(process.env.PORT || 4050,()=>{
+     app.listen(process.env.PORT || 5000,()=>{
          console.log(`Server is running on ${process.env.PORT}`)
      })
  }).catch((error)=>{
